@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+    ViewData: ViewData is a property of the Controller base class in ASP.NET Core. It is a dictionary-like object that allows you to store and retrieve data to be shared with the corresponding view. It uses a key-value pair structure to store the data.
+*@
+@{
+
+    ViewData["Title"] = "Register Page";
+
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">New Registration</h1>
+</div>
+
+<div>
+    <form action="/Home/Register" method="post">
+        <div class="mb-3">
+            <label for="id" class="form-label">Id</label>
+            <input type="text" class="form-control" id="id" name="id" required />
+
+        </div>
+
+        <div class="mb-3">
+            <label for="deptname" class="form-label">Name</label>
+            <input type="text" class="form-control" id="deptname" name="deptname" required />
+
+        </div>
+
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" name="location" required />
+
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+
+
+</div>

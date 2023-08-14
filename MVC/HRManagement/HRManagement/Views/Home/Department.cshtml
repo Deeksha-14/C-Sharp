@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["title"] = "Department";
+}
+
+<div class="text-center">
+    <h1 class="display-4">List of Department</h1>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Department Name</th>
+                <th scope="col">location</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                @foreach (var e in ViewBag.DepartmentList)
+                {
+                <tr>
+                <td>@e.Id</td>
+                <td>@e.Name</td>
+                <td>@e.Location</td>
+                </tr>    
+                }
+
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+<form action="/Home/"></form>
+
+
+</div>
